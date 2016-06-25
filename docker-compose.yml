@@ -20,8 +20,8 @@ websphinx:
     - ENV_DEFAULT_ROOT_VOLUME=/opt/blog
     - ENV_DOC_SOURCE_DIR=/opt/blog/repo/source
     - ENV_DOC_OUTPUT_DIR=/opt/blog/repo/release
-    - ENV_BASE_DOMAIN http://jaypjohnson.com
-    - ENV_GOOGLE_ANALYTICS_CODE UA-79840762-99
+    - ENV_BASE_DOMAIN=http://jaypjohnson.com
+    - ENV_GOOGLE_ANALYTICS_CODE=UA-79840762-99
   volumes:
     - /opt/blog:/opt/blog
 
