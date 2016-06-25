@@ -2,6 +2,8 @@
 Host Your Own Technical Blog with Docker + nginx + Sphinx Bootstrap
 ===================================================================
 
+.. image:: http://jaypjohnson.com/screenshot.png 
+
 I built this repository_ for hosting my own technical blog + resume + work portfolio. It uses `docker compose`_ to deploy my nginx_ and sphinx-bootstrap_ containers and shares a mounted volume across the two containers. 
 
 I use this repository for hosting:
