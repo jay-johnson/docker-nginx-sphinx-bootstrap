@@ -143,7 +143,7 @@ You can use the following environment variables inside the docker-compose.yml_ f
 +----------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------+ 
 | **ENV_BASE_DOMAIN**                    | Your web domain like: ``http://jayjohnson.com``                    | http://jaypjohnson.com                                      | 
 +----------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------+ 
-| **ENV_GOOGLE_ANALYTICS_CODE**          | Your Google Analytics Tracking Code like: ``UA-79840762-99``        | UA-79840762-99                                             | 
+| **ENV_GOOGLE_ANALYTICS_CODE**          | Your Google Analytics Tracking Code like: ``UA-79840762-99``       | UA-79840762-99                                              | 
 +----------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------+ 
 
 .. warning:: Please make sure the **nginx** and **sphinx-bootstrap** containers use the **same base** ``ENV_DEFAULT_ROOT_VOLUME`` directory and that the ``rst`` files are stored inside the ``ENV_DOC_SOURCE_DIR`` and the html output files can be written to the ``ENV_DOC_OUTPUT_DIR`` directory
