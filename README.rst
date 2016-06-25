@@ -13,6 +13,8 @@ http://jaypjohnson.com
 
 Docker Hub Image(s): `jayjohnson/nginx`_ and `jayjohnson/sphinx-bootstrap`_
 
+Container Repositories: docker-nginx_ and docker-sphinx-bootstrap_ 
+
 Date: **2016-06-25**
 
 .. role:: bash(code)
@@ -64,9 +66,9 @@ Other interesting out-of-the-box features are:
 .. _bootstrap: http://getbootstrap.com/
 .. _Google Analytics Tracking Code: https://support.google.com/analytics/answer/1008080?hl=en
 .. _ENV_GOOGLE_ANALYTICS_CODE: https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap/blob/9cdc931b535b8acbdbc9af63add6106e070d98b0/docker-compose.yml#L24
-.. _automatically installed into the default html layout: https://github.com/jay-johnson/docker-sphinx-bootstrap/4c5cddf0b9edc4bee0ff3d673f5d7dd16a8336c5/docker/sphinx-bootstrap/containerfiles/start-container.sh#L13-L14
-.. _manually rebuild the html content: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/master/containerfiles/start-container.sh#L16-17
-.. _automatically build: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/master/containerfiles/start-container.sh#L22-L42
+.. _automatically installed into the default html layout: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L13-L14
+.. _manually rebuild the html content: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L16-17
+.. _automatically build: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L25-L45
 .. _my blog: http://jaypjohnson.com
 .. _technical posts : http://jaypjohnson.com/2016-06-24-configurable-docker-nginx.html
 .. _projects and stack discussions: http://jaypjohnson.com/redis.html
@@ -83,6 +85,8 @@ Other interesting out-of-the-box features are:
 .. _derived nginx.conf : https://github.com/jay-johnson/docker-nginx/blob/master/containerfiles/derived_nginx.conf
 .. _properties.sh : https://github.com/jay-johnson/docker-nginx/blob/master/properties.sh
 .. _docker-compose.yml: https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap/blob/master/docker-compose.yml
+.. _docker-sphinx-bootstrap: https://github.com/jay-johnson/docker-sphinx-bootstrap
+.. _docker-nginx: https://github.com/jay-johnson/docker-nginx
 
 
 Install and Setup
