@@ -1,0 +1,27 @@
+webnginx:
+  image: jayjohnson/nginx
+  container_name: "webnginx"
+  hostname: "webnginx"
+  environment:
+    - ENV_BASE_NGINX_CONFIG=/root/containerfiles/base_nginx.conf
+    - ENV_DERIVED_NGINX_CONFIG=/root/containerfiles/derived_nginx.conf
+    - ENV_DEFAULT_ROOT_VOLUME=/opt/blog/repo/release
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - /opt/blog:/opt/blog
+
+websphinx:
+  image: jayjohnson/sphinx-bootstrap
+  container_name: "websphinx"
+  hostname: "websphinx"
+  environment:
+    - ENV_DEFAULT_ROOT_VOLUME=/opt/blog
+    - ENV_DOC_SOURCE_DIR=/opt/blog/repo/source
+    - ENV_DOC_OUTPUT_DIR=/opt/blog/repo/release
+    - ENV_BASE_DOMAIN http://jaypjohnson.com
+    - ENV_GOOGLE_ANALYTICS_CODE UA-79840762-99
+  volumes:
+    - /opt/blog:/opt/blog
+
