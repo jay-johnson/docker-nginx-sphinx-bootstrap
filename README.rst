@@ -65,7 +65,7 @@ Other interesting out-of-the-box features are:
 .. _bootswatch repository: https://github.com/thomaspark/bootswatch
 .. _bootstrap: http://getbootstrap.com/
 .. _Google Analytics Tracking Code: https://support.google.com/analytics/answer/1008080?hl=en
-.. _ENV_GOOGLE_ANALYTICS_CODE: https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap/blob/9cdc931b535b8acbdbc9af63add6106e070d98b0/docker-compose.yml#L24
+.. _ENV_GOOGLE_ANALYTICS_CODE: https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap/blob/d8d6c59888a9c4befcab26437384669093e2598b/docker-compose.yml#L24
 .. _automatically installed into the default html layout: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L13-L14
 .. _manually rebuild the html content: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L16-17
 .. _automatically build: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L25-L45
