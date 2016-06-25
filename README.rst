@@ -37,14 +37,14 @@ Integrating with Google Search Console
 
 1. Automatic **sitemap.xml** creation
 
-When the container starts or you `manually rebuild the html content`_ it will `automatically build`_ a ``sitemap.xml`` from any files ending with a ``.rst`` extension in the repository's root directory. This file is stored in the environment varaible ``ENV_DOC_OUTPUT_DIR`` directory. This is handy when you want to integrate your site into the `Google Search Console`_ and it should look similar to: http://jaypjohnson.com/sitemap.xml
+When the container starts or you `manually rebuild the html content`_ it will `automatically build`_ a ``sitemap.xml`` from any files ending with a ``.rst`` extension in the repository's root directory. This file is stored in the environment variable ``ENV_DOC_OUTPUT_DIR`` directory. This is handy when you want to integrate your site into the `Google Search Console`_ and it should look similar to: http://jaypjohnson.com/sitemap.xml
 
 What can I use it for?
 ~~~~~~~~~~~~~~~~~~~~~~
 
 After working with the `Levvel team`_ over the past year, I realized the importance of having a blog to demonstrate technical expertise. After watching wordpress lose my work, I knew there had to be a better way. Recently, my friend `Alex`_ recommended I check out `Sphinx`_ because it made documentation even easier than traditional markdown. After finding the `python Sphinx bootstrap`_ repository I knew I wanted to drop this into a docker container so I could deploy content while keeping the nginx services up and running.
 
-I now use this repository as `my blog`_ for `technical posts`_, hosting my `projects and stack discussions`_, `work history`_, resume_, and `contact information`_. I find it so much easier to write an ``rst`` file and let the framework translate it into formatted, stylized html. Now I can focus on content instead of the presentation (which is handy because I am not a web developer or artist). 
+I now use this repository as `my blog`_ for `technical posts`_, hosting my `projects and stack discussions`_, `work history`_, resume_, and `contact information`_. I find it so much easier to write an ``rst`` file and let the framework translate it into formatted, stylized html. Now I can focus on content instead of the presentation (which is nice because I am not a web developer or artist). 
 
 Other interesting out-of-the-box features are:
 
@@ -87,6 +87,7 @@ Other interesting out-of-the-box features are:
 .. _docker-compose.yml: https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap/blob/master/docker-compose.yml
 .. _docker-sphinx-bootstrap: https://github.com/jay-johnson/docker-sphinx-bootstrap
 .. _docker-nginx: https://github.com/jay-johnson/docker-nginx
+.. _deploy + rebuild script: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/1dea9c967848c3c69f31314af64cd84fbc097fc6/containerfiles/deploy-new-content.sh
 
 
 Install and Setup
@@ -209,7 +210,7 @@ Here is how mine looks after adding it to the ``index.rst``
 
 6. Deploy and Rebuild the html files
 
-Inside the ``websphinx`` container I included a deploy + rebuild script you can run from outside the container with:
+Inside the ``websphinx`` container I included a `deploy + rebuild script`_ you can run from outside the container with:
 
 ::
 
