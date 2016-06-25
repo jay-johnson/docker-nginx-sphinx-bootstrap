@@ -28,7 +28,7 @@ I built this composition for hosting a nice-to-read blog that made it easy to ge
 Integrating with Google Analytics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Set your `Google Analytics Tracking Code`_ to the ENV_GOOGLE_ANALYTICS_CODE_ environment variable during container creation
+1. Set your `Google Analytics Tracking Code`_ to the ENV_GOOGLE_ANALYTICS_CODE_ environment variable before container creation
 
 During container startup the environment variable ``ENV_GOOGLE_ANALYTICS_CODE`` will be `automatically installed into the default html layout`_ on every page across your site
 
