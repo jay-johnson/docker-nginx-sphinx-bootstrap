@@ -2,8 +2,9 @@
 Host Your Own Technical Blog with Docker + nginx + Sphinx Bootstrap
 ===================================================================
 
-.. image:: http://jaypjohnson.com/homepagesample.png
+.. figure:: http://jaypjohnson.com/homepagesample.png
 
+   Sample screenshot from a new deployment
 
 I built this repository_ for hosting my own technical blog + resume + work portfolio. It uses `docker compose`_ to deploy my nginx_ and sphinx-bootstrap_ containers and shares a mounted volume across the two containers. 
 
@@ -13,7 +14,7 @@ http://jaypjohnson.com
 
 Docker Hub Image(s): `jayjohnson/nginx`_ and `jayjohnson/sphinx-bootstrap`_
 
-Container Repositories: docker-nginx_ and docker-sphinx-bootstrap_ 
+Container Repo(s): docker-nginx_ and docker-sphinx-bootstrap_ 
 
 Date: **2016-06-25**
 
@@ -30,19 +31,19 @@ Integrating with Google Analytics
 
 1. Set your `Google Analytics Tracking Code`_ to the ENV_GOOGLE_ANALYTICS_CODE_ environment variable before container creation
 
-During container startup the environment variable ``ENV_GOOGLE_ANALYTICS_CODE`` will be `automatically installed into the default html layout`_ on every page across your site
+   During container startup the environment variable ``ENV_GOOGLE_ANALYTICS_CODE`` will be `automatically installed into the default html layout`_ on every page across your site
 
 Integrating with Google Search Console
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Automatic **sitemap.xml** creation
 
-When the container starts or you `manually rebuild the html content`_ it will `automatically build`_ a ``sitemap.xml`` from any files ending with a ``.rst`` extension in the repository's root directory. This file is stored in the environment variable ``ENV_DOC_OUTPUT_DIR`` directory. This is handy when you want to integrate your site into the `Google Search Console`_ and it should look similar to: http://jaypjohnson.com/sitemap.xml
+   When the container starts or you `manually rebuild the html content`_ it will `automatically build`_ a ``sitemap.xml`` from any files ending with a ``.rst`` extension in the repository's root directory. This file is stored in the environment variable ``ENV_DOC_OUTPUT_DIR`` directory. This is handy when you want to integrate your site into the `Google Search Console`_ and it should look similar to: http://jaypjohnson.com/sitemap.xml
 
 What can I use it for?
 ~~~~~~~~~~~~~~~~~~~~~~
 
-After working with the `Levvel team`_ over the past year, I realized the importance of having a blog to demonstrate technical expertise. After watching wordpress lose my work, I knew there had to be a better way. Recently, my friend `Alex`_ recommended I check out `Sphinx`_ because it made documentation even easier than traditional markdown. After finding the `python Sphinx bootstrap`_ repository I knew I wanted to drop this into a docker container so I could deploy content while keeping the nginx services up and running.
+After working with the `Levvel team`_ over the past year, I realized the importance of having a blog to demonstrate technical expertise. After watching wordpress lose my work, I knew there had to be a better way. Recently, my friend `Alex Smith`_ recommended I check out `Sphinx`_ because it made documentation even easier than traditional markdown. After finding the `python Sphinx bootstrap`_ repository I knew I wanted to drop this into a docker container so I could deploy content while keeping the nginx services up and running.
 
 I now use this repository as `my blog`_ for `technical posts`_, hosting my `projects and stack discussions`_, `work history`_, resume_, and `contact information`_. I find it so much easier to write an ``rst`` file and let the framework translate it into formatted, stylized html. Now I can focus on content instead of the presentation (which is nice because I am not a web developer or artist). 
 
@@ -55,7 +56,7 @@ Other interesting out-of-the-box features are:
 .. _Google Analytics: https://analytics.google.com/
 .. _Google Search Console: https://www.google.com/webmasters/tools/
 .. _Levvel team: http://levvel.io
-.. _Alex: https://github.com/ajsmith
+.. _Alex Smith: https://github.com/ajsmith
 .. _Sphinx: http://www.sphinx-doc.org/en/stable/
 .. _reStructuredText Markup: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
 .. _python Sphinx bootstrap: https://github.com/ryan-roemer/sphinx-bootstrap-theme
@@ -65,10 +66,10 @@ Other interesting out-of-the-box features are:
 .. _bootswatch repository: https://github.com/thomaspark/bootswatch
 .. _bootstrap: http://getbootstrap.com/
 .. _Google Analytics Tracking Code: https://support.google.com/analytics/answer/1008080?hl=en
-.. _ENV_GOOGLE_ANALYTICS_CODE: https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap/blob/d8d6c59888a9c4befcab26437384669093e2598b/docker-compose.yml#L24
-.. _automatically installed into the default html layout: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L13-L14
-.. _manually rebuild the html content: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L16-17
-.. _automatically build: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/7eb1ce2b493c9512ac9c584950ba83b8ea4c027f/containerfiles/start-container.sh#L25-L45
+.. _ENV_GOOGLE_ANALYTICS_CODE: https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap/blob/db0f1f944918a0c8a0e1c2c6593cde6f01a173f1/docker-compose.yml#L24
+.. _automatically installed into the default html layout: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/2a752b96a7bcd378dbb207da1922c2e8997dc7ae/containerfiles/start-container.sh#L13-L14
+.. _manually rebuild the html content: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/2a752b96a7bcd378dbb207da1922c2e8997dc7ae/containerfiles/start-container.sh#L16-17
+.. _automatically build: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/2a752b96a7bcd378dbb207da1922c2e8997dc7ae/containerfiles/start-container.sh#L21-L41
 .. _my blog: http://jaypjohnson.com
 .. _technical posts : http://jaypjohnson.com/2016-06-24-configurable-docker-nginx.html
 .. _projects and stack discussions: http://jaypjohnson.com/redis.html
@@ -87,7 +88,7 @@ Other interesting out-of-the-box features are:
 .. _docker-compose.yml: https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap/blob/master/docker-compose.yml
 .. _docker-sphinx-bootstrap: https://github.com/jay-johnson/docker-sphinx-bootstrap
 .. _docker-nginx: https://github.com/jay-johnson/docker-nginx
-.. _deploy + rebuild script: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/1dea9c967848c3c69f31314af64cd84fbc097fc6/containerfiles/deploy-new-content.sh
+.. _deploy + rebuild script: https://github.com/jay-johnson/docker-sphinx-bootstrap/blob/2a752b96a7bcd378dbb207da1922c2e8997dc7ae/containerfiles/deploy-new-content.sh
 
 
 Install and Setup
@@ -97,38 +98,38 @@ I am running the docker containers on an Amazon EC2 t1.micro with a Route 53 dns
 
 On the EC2 micro I ran these commands to setup and deploy the site:
 
-1. Create the ``/opt/blog`` directory
+#. Create the ``/opt/blog`` directory
 
-::
+   ::
 
-    $ mkdir -p /opt/blog/ && chmod 777 /opt/blog
+       $ mkdir -p /opt/blog/ && chmod 777 /opt/blog
 
-2. Clone this repo
+#. Clone this repo
 
-::
+   ::
 
-    $ cd /opt/blog
-    $ git clone https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap.git repo 
-    $ cd repo
-    $
+       $ cd /opt/blog
+       $ git clone https://github.com/jay-johnson/docker-nginx-sphinx-bootstrap.git repo 
+       $ cd repo
+       $
 
-3. Start the composition
+#. Start the composition
 
-::
+   ::
 
-    $ ./start_composition.sh
-    Creating websphinx
-    Creating webnginx
-    Done
-    $
+       $ ./start_composition.sh
+       Creating websphinx
+       Creating webnginx
+       Done
+       $
 
-4. Test the blog
+#. Test the blog
 
-::
+   ::
 
-    $ curl -s http://localhost:80 | grep Welcome | grep h2
-    <h2>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h2>
-    $
+       $ curl -s http://localhost:80 | grep Welcome | grep h2
+       <h2>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h2>
+       $
 
 Compose Environment Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -170,60 +171,60 @@ Here is how my EC2 host has the shared directory set up
 Want to add a new blog post?
 ----------------------------
 
-1. Open a new ``new-post.rst`` file in the ``source`` directory
+#. Open a new ``new-post.rst`` file in the ``source`` directory
 
-2. Add the following lines to the new ``new-post.rst`` file:
+#. Add the following lines to the new ``new-post.rst`` file:
 
-::
+   ::
 
-    ==================
-    This is a New Post
-    ==================
-
-    My first blog post
-
-
-3. Edit the ``index.rst`` file and find the ``Site Contents`` section
-
-4. Add a new line to ``Site Contents`` **toctree** section containing: ``new-post`` 
-
-Here is how mine looks after adding it to the ``index.rst``
-
-::
-
-    Site Contents
-    -------------
-
-    .. toctree::
-        :maxdepth: 2
-
-        new-post
-        python
-        work-history
-        contact
-        about
+       ==================
+       This is a New Post
+       ==================
+   
+       My first blog post
 
 
-.. note:: One nice feature of the sphinx framework is it will automatically label the link with the first **Title** inside the file.
+#. Edit the ``index.rst`` file and find the ``Site Contents`` section
 
-5. Save the ``index.rst`` file
+#. Add a new line to ``Site Contents`` **toctree** section containing: ``new-post`` 
 
-6. Deploy and Rebuild the html files
+   Here is how mine looks after adding it to the ``index.rst``
 
-Inside the ``websphinx`` container I included a `deploy + rebuild script`_ you can run from outside the container with:
+   ::
 
-::
+       Site Contents
+       -------------
+   
+       .. toctree::
+           :maxdepth: 2
+   
+           new-post
+           python
+           work-history
+           contact
+           about
 
-    $ docker exec -it websphinx /root/containerfiles/deploy-new-content.sh
 
-7. Test the new post shows up in the site
+   .. note:: One nice feature of the sphinx framework is it will automatically label the link with the first **Title** inside the file.
 
-::
+#. Save the ``index.rst`` file
 
-    $ curl -s http://localhost:80/ | grep href | grep toctree | grep "New Post"
-    <li class="toctree-l1"><a class="reference internal" href="new-post.html">This is a New Post</a></li>
-    <li class="toctree-l1"><a class="reference internal" href="new-post.html">This is a New Post</a></li>
-    $
+#. Deploy and Rebuild the html files
+
+   Inside the ``websphinx`` container I included a `deploy + rebuild script`_ you can run from outside the container with:
+
+   ::
+
+       $ docker exec -it websphinx /root/containerfiles/deploy-new-content.sh
+
+#. Test the new post shows up in the site
+
+   ::
+
+       $ curl -s http://localhost:80/ | grep href | grep toctree | grep "New Post"
+       <li class="toctree-l1"><a class="reference internal" href="new-post.html">This is a New Post</a></li>
+       <li class="toctree-l1"><a class="reference internal" href="new-post.html">This is a New Post</a></li>
+       $
 
 Stopping the site
 ~~~~~~~~~~~~~~~~~
@@ -246,48 +247,48 @@ Cleanup the site containers
 
 If you want to stop and cleanup the site and docker containers run these commands:
 
-1. Check the site containers are running
+#. Check the site containers are running
 
-::
+   ::
 
-    $ docker ps -a
-    CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
-    f095da56839f        jayjohnson/nginx              "/root/containerfiles"   About an hour ago   Up About an hour    0.0.0.0:82->80/tcp, 0.0.0.0:444->443/tcp   webnginx
-    b2f9d5dd915a        jayjohnson/sphinx-bootstrap   "/root/containerfiles"   About an hour ago   Up About an hour                                               websphinx
-    $
+       $ docker ps -a
+       CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
+       f095da56839f        jayjohnson/nginx              "/root/containerfiles"   About an hour ago   Up About an hour    0.0.0.0:82->80/tcp, 0.0.0.0:444->443/tcp   webnginx
+       b2f9d5dd915a        jayjohnson/sphinx-bootstrap   "/root/containerfiles"   About an hour ago   Up About an hour                                               websphinx
+       $
 
-2. Stop the composition
+#. Stop the composition
 
-::
+   ::
 
-    $ ./stop_composition.sh 
-    Stopping the Composition
-    Stopping webnginx ... done
-    Stopping websphinx ... done
-    Done
-    $
+       $ ./stop_composition.sh 
+       Stopping the Composition
+       Stopping webnginx ... done
+       Stopping websphinx ... done
+       Done
+       $
 
-3. Remove the containers
+#. Remove the containers
 
-::
+   ::
 
-    $ docker rm webnginx websphinx
-    webnginx
-    websphinx
-    $
+       $ docker rm webnginx websphinx
+       webnginx
+       websphinx
+       $
 
-4. Remove the container images
+#. Remove the container images
 
-::
+   ::
 
-    $ docker rmi jayjohnson/nginx jayjohnson/sphinx-bootstrap
+       $ docker rmi jayjohnson/nginx jayjohnson/sphinx-bootstrap
 
 
-5. Remove the blog directory
+#. Remove the blog directory
 
-:: 
+   :: 
 
-    $ rm -rf /opt/blog/repo
+       $ rm -rf /opt/blog/repo
 
 Licenses
 --------
