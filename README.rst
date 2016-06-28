@@ -2,7 +2,7 @@
 Host Your Own Technical Blog with Docker + nginx + Sphinx Bootstrap
 ===================================================================
 
-.. figure:: http://jaypjohnson.com/homepagesample.png
+.. figure:: http://jaypjohnson.com/_images/image_homepagesample.png
 
    Sample screenshot from a new deployment
 
