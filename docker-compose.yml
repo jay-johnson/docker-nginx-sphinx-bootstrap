@@ -1,5 +1,5 @@
 webnginx:
-  image: jayjohnson/nginx
+  image: jayjohnson/nginx:1.0.0
   container_name: "webnginx"
   hostname: "webnginx"
   environment:
