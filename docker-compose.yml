@@ -13,7 +13,7 @@ webnginx:
     - /opt/blog:/opt/blog
 
 websphinx:
-  image: jayjohnson/sphinx-bootstrap
+  image: jayjohnson/sphinx-bootstrap:1.0.0
   container_name: "websphinx"
   hostname: "websphinx"
   environment:
