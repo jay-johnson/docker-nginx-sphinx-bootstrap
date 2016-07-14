@@ -252,9 +252,9 @@ If you want to stop and cleanup the site and docker containers run these command
    ::
 
        $ docker ps -a
-       CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
-       f095da56839f        jayjohnson/nginx              "/root/containerfiles"   About an hour ago   Up About an hour    0.0.0.0:82->80/tcp, 0.0.0.0:444->443/tcp   webnginx
-       b2f9d5dd915a        jayjohnson/sphinx-bootstrap   "/root/containerfiles"   About an hour ago   Up About an hour                                               websphinx
+       CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS              PORTS                                      NAMES
+       4159eb49d9d2        jayjohnson/nginx:1.0.0              "/root/containerfiles"   20 minutes ago      Up 50 seconds       0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   webnginx
+       f0ba0a7d0f4b        jayjohnson/sphinx-bootstrap:1.0.0   "/root/containerfiles"   20 minutes ago      Up 50 seconds                                                  websphinx
        $
 
 #. Stop the composition
@@ -281,7 +281,7 @@ If you want to stop and cleanup the site and docker containers run these command
 
    ::
 
-       $ docker rmi jayjohnson/nginx jayjohnson/sphinx-bootstrap
+       $ docker rmi jayjohnson/nginx:1.0.0 jayjohnson/sphinx-bootstrap:1.0.0
 
 
 #. Remove the blog directory
